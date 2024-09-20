@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body> 
+    <div id="main">
+        <div id="page1"> 
+            <div id="nav">
+                <!-- <img src="https://images.squarespace-cdn.com/content/v1/5c46b04185ede1d429ca6f1c/1589262435634-WYII8DDF8WELPKFSKU6J/Web+logo_Artboard+4_Artboard+4.png?format=500w"
+                    alt="image" class="image-1"> -->
+                <div id="nav-part-2">
+                    <h4><a href="#">Work</a></h4>
+                    <h4><a href="#">Studio</a></h4>
+                    <h4><a href="#">Contact</a></h4>
+                </div>
+            </div>
+            <div id="center">
+                <div id="left">
+                    <h3>Welcome to our library, your gateway to knowledge, innovation, and exploration.</h3>
+                </div>
+                <div id="right">
+                    <h1>SPACES</h1>
+                    <h1>THAT</h1>
+                    <h1>INSPIRE</h1>
+                </div>
+            </div>
+            <div id="key">
+                <div id="key1"></div>
+                <div id="key2"></div>
+                <div id="key3"></div>
+            </div>
+            <!-- <video autoplay loop muted src="./video.mp4"></video> -->
+            <h1 id="heading">Library Management System</h1>
+
+            <h2>Student Section</h2>
+            <form id="studentForm">
+                <input type="text" id="studentBookTitle" placeholder="Book Title" required>
+                <button id="borrow-book" type="submit">Borrow Book</button>
+            </form>
+            <h3>Available Books</h3>
+            <ul id="studentBookList"></ul>
+        
+            <h2>Staff Section</h2>
+            <form id="staffForm">
+                <input type="text" id="staffBookTitle" placeholder="Book Title" required>
+                <input type="text" id="staffBookAuthor" placeholder="Book Author" required>
+                <input type="number" id="staffBookCopies" placeholder="Available Copies" required min="1">
+                <button type="submit">Add/Update Book</button>
+            </form>
+            <h3>Inventory</h3>
+            <ul id="staffBookList"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
