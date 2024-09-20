@@ -1,0 +1,252 @@
+html,
+body {
+    height: 100%;
+    max-width: 100vw;
+    padding: 0 2vw;
+    padding-bottom: 2vw;
+    background-color: #EFEAE3;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+/* #main {
+    height: 100%;
+    width: 100%;
+} */ 
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative; 
+
+}
+
+#nav {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0vw;
+    z-index: 100;
+}
+
+.image-1 {
+    height: 100px;
+    width: 100px;
+}
+
+#nav-part-2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part-2 h4 {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid #a29a9a;
+    border-radius: 50px;
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part-2 h4:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all 300ms ease;
+}
+
+#nav-part-2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part-2 h4 a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part-2 h4:hover a {
+    color: white;
+}
+
+#center {
+    height: 60vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.7vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+}
+
+#right {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    overflow: hidden;
+}
+
+#right h1 {
+    font-size: 8vw;
+    line-height: 0.1;
+}
+
+#page1 video {
+    position: relative;
+    border-radius: 30px;
+    margin-top: 4vw;
+    width: 100%;
+}
+
+#key {
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    right: -2vw;
+    top: 68%;
+}
+
+#key1 {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: orangered;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#key2 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: orangered;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#key3 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: orangered;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+#bookTitle,#bookAuthor {
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px orangered;
+    margin-right: 1vw;
+}
+
+#addBook {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    color: black;
+    background-color: orangered;
+    border: 3px solid black;
+    transition: all 300ms ease;
+}
+
+#addBook:hover {
+   cursor: pointer;
+   background-color: black;
+   color: orangered;
+   transform: scale(1.1);
+   box-shadow: 0px 2px 3px 3px yellow;
+}
+#studentBookTitle{
+  cursor:text;
+  padding: 12px 18px 12px 18px;
+  border:1px solid grey;
+  background-color: transparent;
+  opacity: 0.9;
+}
+#studentBookTitle::placeholder{
+  font-size: 18px;
+}
+#borrow-book{
+  margin-left:40px;
+  padding: 12px 18px 12px 18px;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: black;
+  color:white;
+  border:none;
+}
+button{
+  padding: 12px 18px 12px 18px;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: black;
+  color:white;
+  border:none;
+}
+input{
+  cursor:text;
+  padding: 12px 18px 12px 18px;
+  border:1px solid grey;
+  background-color: transparent;
+  opacity: 0.9;
+}
+input::placeholder{
+  font-size: 18px;
+}
